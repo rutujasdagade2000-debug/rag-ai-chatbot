@@ -1,0 +1,4 @@
+OpenAI: OpenAI released several GPT models for text generation.
+Anthropic: Anthropic develops the Claude family of AI models.
+Google: Google develops Gemini AI models.
+Meta: Meta develops the open source Llama models.

@@ -1,0 +1,3 @@
+The Aurora Project is a fictional project created for testing document upload.
+Its headquarters are in Pune.
+Its main product is called Aurora AI.

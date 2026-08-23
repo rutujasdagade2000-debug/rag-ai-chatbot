@@ -1,0 +1,5 @@
+GPT-5: GPT-5 is OpenAI's latest language model with improved reasoning and coding.
+Claude Opus 4: Claude Opus 4 is Anthropic's advanced AI model.
+Gemini 2.0: Gemini 2.0 is Google's multimodal AI model.
+Llama 3.3: Llama 3.3 is Meta's open-source language model.
+Mistral Large: Mistral Large is an AI model developed by Mistral AI.

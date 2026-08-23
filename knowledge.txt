@@ -1,0 +1,3 @@
+Python: Python is a programming language.
+AI: Articifical Intelligence is the simulation of human intelligence by machines.
+chatbot: A chatbot is a program that talks to users.

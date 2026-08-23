@@ -1,0 +1,7 @@
+Nvidia: Nvidia has become a cornerstone of the AI revolution, providing GPUs.
+Microsoft: Microsoft has invested over $13 billion in OpenAI.
+Alphabet: Alphabet develops Gemini AI models.
+Meta: Meta develops the Llama family of AI models.
+Amazon: Amazon invests in AI for cloud computing.
+TSMC: TSMC manufactures advanced AI chips.
+Adobe: Adobe builds AI tools for creative software.

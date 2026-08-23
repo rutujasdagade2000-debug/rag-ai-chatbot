@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>My AI Chatbot</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            margin: 0;
+        }
+
+        .container {
+            width: 700px;
+            margin: 50px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            gap: 10px;
+            margin-top: 30px;
+        }
+
+        input {
+            flex: 1;
+            padding: 12px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        button {
+            padding: 12px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .question {
+            margin-top: 30px;
+            padding: 15px;
+            background: #eeeeee;
+            border-radius: 8px;
+        }
+
+        .answer {
+            margin-top: 15px;
+            padding: 15px;
+            background: #f0f7ff;
+            border-radius: 8px;
+            line-height: 1.6;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🤖 My AI Chatbot</h1>
+
+   {% if upload_message %}
+    <p>{{ upload_message }}</p>
+{% endif %}
+
+    <form method="POST" enctype="multipart/form-data">
+    <input type="file" name="file" accept=".txt, .pdf">
+    <button type="submit">Upload Document</button>
+</form>
+
+    <form method="POST" enctype="multipart/form-data">
+
+        <input
+            type="text"
+            name="question"
+            placeholder="Ask me something..."
+            value="{{ question }}"
+            required
+        >
+
+        <button type="submit">
+            Send
+        </button>
+
+
+        <a href="/" style="padding: 12px 20px; text-decoration: none;">
+    Clear
+</a>
+
+    </form>
+
+
+    {% if answer %}
+
+        <div class="question">
+            <strong>You:</strong>
+            {{ question }}
+        </div>
+
+        <div class="answer">
+            <strong>Bot:</strong><br>
+            {{ answer }}
+        </div>
+
+
+    {% if sources %}
+    <div class="answer">
+        <strong>Sources:</strong><br>
+        {{ sources | join(", ") }}
+    </div>
+{% endif %}
+
+    {% endif %}
+
+</div>
+
+</body>
+</html>
